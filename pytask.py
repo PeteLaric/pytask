@@ -18,9 +18,9 @@
 #	sudo apt-get upgrade
 #	sudo apt-get install espeak-ng
 #
-# This example could probably be modified to work with other operating systems as well.  I will
-# leave that to others for now.  Again, I wrote this utility for my own use, but I'm sharing it
-# with you, because that's just the sort of guy I am!  ;-)
+# Because we call on the Pandas library to load the task list spreadsheet, you will need to have
+# Pandas installed in order to use pytask.  The easiest way to install Pandas is to install the
+# Anaconda scientific computing suite, available from: http://www.anaconda.com
 #
 # The task list file is a pretty straightforward spreadsheet.  At present, there are three
 # columns: hour, minute, and path.  It would be easy to mod this program to perform tasks only
@@ -95,7 +95,8 @@ while (active == True): #loop forever
 			# reset "executed" flag -- we don't need it anymore (because current time no longer aligns with trigger)
 			executed[i] = False
 
+	time.sleep(1) #checking just once per second makes the readout a little less crazy
 	print("\n")
 
-print("pytask exited normally.")
 
+print("pytask exited normally.")
