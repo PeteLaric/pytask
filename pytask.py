@@ -1,5 +1,5 @@
 # pytask.py
-# A simple task manager, written in Python!
+# A simple task scheduler, written in Python!
 # (cc) 2022-04-15 BY Pete Laric / PeteLaric.com
 #
 # I wrote this ultra-simple task scheduler to automate turning a cryptocurrency mining rig on
